@@ -21,6 +21,28 @@ $(window).on('load', function() {
         );
     });
 
+    // Scroll context
+    var w = window,
+    doc = document.documentElement,
+    $header = document.getElementById('main-wrapper');
+
+
+    // Initial scroll check
+    if(doc.scrollTop > 10) {
+        $header.classList.add("page-scrolled")
+    }else {
+        $header.classList.remove("page-scrolled")
+    }
+
+    // Onscroll event check
+    w.onscroll = function(){
+        if(doc.scrollTop > 10) {
+            $header.classList.add("page-scrolled")
+        }else {
+            $header.classList.remove("page-scrolled")
+        }
+    };
+
     // Create intersection observer for all sections
     const observer = new IntersectionObserver(_entries => {
         // Highlight headers in viewport

@@ -12,7 +12,7 @@
   --colorNeutral600: #6e747e;
   --colorNeutral700: #666e7a;
   --colorNeutral800: #313f4d;
-  --colorNeutral900: #141618;
+  --colorNeutral900: #040C14;
   --colorRed100: #fff5f5;
   --colorRed500: #d23031;
   --colorRed700: #C13F39;
@@ -28,10 +28,10 @@
   /* =================================== */
   --fontFamily: Inter, Arial, sans-serif;
   --headingFontFamily: var(--fontFamily);
-  --borderRadiusSmall: 2px;
-  --borderRadiusDefault: 4px;
-  --borderRadiusLarge: 6px;
-  --navItemBorderRadius: var(--borderRadiusDefault);
+  --borderRadiusSmall: 4px;
+  --borderRadiusDefault: 8px;
+  --borderRadiusLarge: 12px;
+  --navItemBorderRadius: 1000px;
   --transitionDefault: 200ms all ease-in-out;
   --boxShadowLevel0: 0px 0px 0px 1px var(--colorBorderSubtle);
   --boxShadowLevel1: 0px 4px 8px rgba(0, 0, 0, 0.05),

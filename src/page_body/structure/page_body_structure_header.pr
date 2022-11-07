@@ -13,12 +13,13 @@
     
     <!-- Navbar -->
     <nav class="primary-menu navbar navbar-expand-lg">
-        {[ inject "component_site_logo" context page /]}
         
         <div class="container-fluid">
 
             {* Potential Left Link Here *}
             <div id="header-nav" class="navbar-collapse">
+                {[ inject "component_site_logo" context page /]}
+                
                 <ul class="navbar-nav">
                     {[ if shouldShowTabbar ]}
                         {[ for item in rootGroup.children ]}
