@@ -77,8 +77,8 @@ html {
 
   .navbar {
     padding: 0px;
-    height: var(--topNavHeight);
-    min-height: 76px;
+    height: 76px;
+    min-height: 56px;
     max-height: 96px;
     align-content: center;
     max-width: var(--siteMaxWidth);
@@ -591,7 +591,7 @@ a.site-logo {
 }
 
 .header-nav {
-  height: 76px;
+  //height: 76px;
   padding: 16px;
 }
 
@@ -601,11 +601,6 @@ a.site-logo {
   padding: 0px 16px;
   border-radius: var(--navItemBorderRadius);
   transition: var(--transitionDefault);
-}
-
-.primary-menu .container-fluid {
-  margin: 0px;
-  padding: 0px;
 }
 
 /* Hamburger Menu Button */
@@ -1476,6 +1471,14 @@ header#header {
     transition: all 0.3s;
   }
   transition: all 0.3s;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+#main-wrapper {
+  padding-top: 76px;
 }
 
 .primary-menu ul.navbar-nav>li>a:not(.btn) {
@@ -1488,14 +1491,42 @@ header#header {
       transition: all 0.3s;
   }
   .navbar {
-    padding: 0px;
     height: 56px;
-    min-height: auto;
+    padding: 0px;
     transition: all 0.3s;
   }
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   background-color: rgba(4, 12, 20, 0.68) !important;
   transition: all 0.3s;
-  margin-bottom: 20px;
+}
+
+.docs-navigation .nav .nav-item a.nav-link {
+  border-radius: 12px !important;
+  padding: 13px 16px 14px 16px !important;
+  font-size: 15px;
+}
+
+.docs-navigation>.nav .nav-item .nav-link:hover {
+  color: #00abed;
+  background-color: transparent;
+}
+
+.docs-navigation>.nav .nav-item .nav-link.active {
+  background-color: rgba(0, 171, 237, 0.08);
+}
+
+.primary-menu .container-fluid {
+  margin: 0px;
+  padding: 10px 0px;
+  transition: all 0.3s;
+}
+
+
+.page-scrolled header#header {
+  .primary-menu .container-fluid {
+    margin: 0px;
+    padding: 0px 0px;
+    transition: all 0.3s;
+  } 
 }
